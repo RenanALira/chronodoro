@@ -7,6 +7,7 @@
     color: var(--text-over-primary);
     padding: 1rem;
     border-radius: 0.8rem;
+    transition: all .1s ease-in-out;
 }
 
 .menu-item-link svg {
@@ -16,5 +17,4 @@
 
 .menu-item-link:hover {
     filter: brightness(85%);
-    transition: all .1s ease-in-out;
 }
