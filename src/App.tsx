@@ -10,7 +10,16 @@ import { DefaultButton } from './components/DefaultButton';
 import { PlayCircleIcon } from 'lucide-react';
 import { Footer } from './components/Footer';
 
+function setInitialTheme() {
+    document.documentElement.setAttribute(
+        'data-theme',
+        localStorage.getItem('theme') === 'dark' ? 'dark' : 'light'
+    );
+}
+
 export function App() {
+    setInitialTheme();
+
     return (
         <>
             <Container>
